@@ -1,44 +1,26 @@
 package com.example.quizapp.Model
 
+import com.example.quizapp.Questions.Questions
 import com.example.quizapp.R
-import kotlin.collections.ArrayList
 
 object QuestionsSource {
     const val correctAnswer = "correct_answers"
     const val username = "username"
-    fun getQuestions(): ArrayList<Questions> {
-        val questionList = ArrayList<Questions>()
-        val question1 = Questions(
-            1,
-            R.drawable.world_cup,
-            "Which national team has won the most World Cup",
-            "Brazil",
-            "France",
-            "Italy",
-            "Spain",
-            1
-        )
-        val question2 = Questions(
-            2,
-            R.drawable.ballon_dor,
-            "Who won the most Ballon D'or?",
-            "Cristiano Ronaldo",
-            "Lionel Messi",
-            "Johan Cruyff",
-            "Ronaldo Nazario",
-            2
-        )
-        val question3 = Questions(
+    const val nCorrectAnswer = "correct_answers"
+    const val nUsername = "username"
+    fun getQuestions(): List<Questions> {
+        val questionList : List<Questions> = listOf(
+         Questions(
             3,
             R.drawable.champions_league,
-            "Who was the winner of the UCL in 2007?",
-            "Liverpool",
-            "Manchester United",
-            "Real Madrid",
+            "Who was the winner of the UCL in 1993?",
+            "Nottingham Forest",
+            "Olympique de Marseille",
+            "FC Barcelona",
             "AC Milan",
-            4
-        )
-        val question4 = Questions(
+            2
+        ),
+       Questions(
             4,
             R.drawable.siuu,
             "When was SIUUU invented?",
@@ -47,28 +29,8 @@ object QuestionsSource {
             "vs Atletico in 2017 UCL ",
             "vs Barcelona in 2017 spanish supercup",
             1
-        )
-        val question5 = Questions(
-            5,
-            R.drawable.redcaard,
-            "What player has never seen a red card?",
-            "Ronaldinho",
-            "Pepe",
-            "David Beckham",
-            "Karim Benzema",
-            4
-        )
-        val question6 = Questions(
-            6,
-            R.drawable.eurocopa,
-            "Who won the Euros 2020?",
-            "France",
-            "Spain",
-            "Italy",
-            "England",
-            3
-        )
-        val question7 = Questions(
+        ),
+        Questions(
             7,
             R.drawable.messi2012,
             "How many goals did Messi score in 2012?",
@@ -77,8 +39,8 @@ object QuestionsSource {
             "85",
             "95",
             1
-        )
-        val question8 = Questions(
+        ),
+         Questions(
             8,
             R.drawable.robben,
             "In which one of these team has Robben played for?",
@@ -87,8 +49,8 @@ object QuestionsSource {
             "Juventus",
             "Paris SG",
             2
-        )
-        val question9 = Questions(
+        ),
+       Questions(
             9,
             R.drawable.dinero,
             "What is the most expensive transfer in history?",
@@ -97,8 +59,8 @@ object QuestionsSource {
             "Ronaldo to Juventus",
             "Coutinho to Barcelona",
             1
-        )
-        val question10 = Questions(
+        ),
+        Questions(
             9,
             R.drawable.aguerooooooooooo,
             "AGUEROOOOOOOOOOOOO",
@@ -107,8 +69,8 @@ object QuestionsSource {
             "95:00",
             "91:25",
             2
-        )
-        val question11 = Questions(
+        ),
+        Questions(
             9,
             R.drawable.london,
             "Which of these teams isn't from London?",
@@ -117,18 +79,18 @@ object QuestionsSource {
             "Arsenal",
             "Chelsea",
             2
-        )
-        val question12 = Questions(
+        ),
+       Questions(
             9,
-            R.drawable.varr,
+            R.drawable.`var`,
             "What does VAR stand for?",
             "Video Assisted Referee",
             "Very Awful Referee",
             "Virtual Assitant Referee",
             "Vincent and Rupert(Best referees ITW)",
             1
-        )
-        val question13 = Questions(
+        ),
+        Questions(
             9,
             R.drawable.wc,
             "How many teams play in the World Cup?",
@@ -137,8 +99,8 @@ object QuestionsSource {
             "48",
             "32",
             4
-        )
-        val question14 = Questions(
+        ),
+       Questions(
             9,
             R.drawable.zlatan,
             "In which one of these teams Zlatan didn't play for",
@@ -147,41 +109,94 @@ object QuestionsSource {
             "Inter Milan",
             "Arsenal",
             4
-        )
-        val question15 = Questions(
+        ),
+        Questions(
             9,
-            R.drawable.me,
-            "In what position does Momo play :D",
-            "Forward",
-            "Defender",
-            "Midfield",
-            "GoalKeeper",
+            R.drawable.rooney,
+            "In which year did Wayne Rooney make his Premier League debut?",
+            "2000",
+            "2001",
+            "2002",
+            "2003",
+            3
+        ),
+        Questions(
+            9,
+            R.drawable.billingham,
+            "Which Championship side did Jude Bellingham sign for Borussia Dortmund from?",
+            "Birmingham",
+            "Millwall",
+            "Reading",
+            "Leeds",
+            1
+        ),
+        Questions(
+            9,
+            R.drawable.senegal,
+            "How many World Cup participations has the Senegal National Team including Qatar 2022",
+            "3",
+            "2",
+            "4",
+            "1",
+            1
+        ),
+       Questions(
+            9,
+            R.drawable.hattrick,
+            "Which player scored the fastest hat-trick in the Premier League?",
+            "Sergio Aguero",
+            "Thierry Henry",
+            "Sadio Mané",
+            "Luis Suarez",
+            3
+        ),
+        Questions(
+            9,
+            R.drawable.can,
+            "I have played for Chelsea and spent time playing in Turkey. I've been crowned African Footballer of the Year four times and the Africa Cup of Nations twice.",
+            "Micheal Essien",
+            "Didier Drogba",
+            "Michel John Obi",
+            "Samuel Eto'o",
+            4
+        ),
+        Questions(
+            9,
+            R.drawable.euro,
+            "With three titles each, which two teams have won the most European Championships?",
+            "France & Germany",
+            "Spain & Germany",
+            "France & Italy",
+            "Italy & Spain",
+            2
+        ),
+        Questions(
+            9,
+            R.drawable.gk,
+            "With 202 clean sheets, which goalkeeper has the best record in the Premier League?",
+            "Van der Saar",
+            "Petr Cech",
+            "Petr Schmeichel ",
+            "Édouard Mendy",
+            2
+        ),
+        Questions(
+            9,
+            R.drawable.strikerpl,
+            "With 260 goals, who is the Premier League's all-time top scorer?",
+            "Alan Shearer",
+            "Wayne Rooney",
+            "Kun Aguero",
+            "Thierry Henry",
             1
         )
-
-
-
-        questionList.add(question1)
-        questionList.add(question2)
-        questionList.add(question3)
-        questionList.add(question4)
-        questionList.add(question5)
-        questionList.add(question6)
-        questionList.add(question7)
-        questionList.add(question8)
-        questionList.add(question9)
-        questionList.add(question10)
-        questionList.add(question11)
-        questionList.add(question12)
-        questionList.add(question13)
-        questionList.add(question14)
-        questionList.add(question15)
-        questionList.shuffle()
-        return questionList
+        )
+        val questions = questionList.asSequence().shuffled().take(15).toList()
+        return questions
     }
 
-    fun getNbaQuestions(): ArrayList<Questions> {
-        val questionsList: ArrayList<Questions> = arrayListOf(
+    fun getNbaQuestions(): List<Questions> {
+        val questionsList: List<Questions> = listOf(
             Questions(
                 1,
                 R.drawable.rookie,
@@ -294,7 +309,7 @@ object QuestionsSource {
             ),
             Questions(
                 13,
-                R.drawable.nba2,
+                R.drawable.nba23,
                 "What NBA player has won the most league MVPs?",
                 "Kobe Bryant",
                 "Kareem Abdul-Jabbar",
@@ -321,10 +336,233 @@ object QuestionsSource {
                 "Micheal Jordan",
                 "Stephen Curry",
                 3
+            ),
+            Questions(
+                16,
+                R.drawable.nba23,
+                "How many NBA franchises exist as of today?",
+                "32",
+                "30",
+                "28",
+                "33",
+                2
+            ),
+            Questions(
+                17,
+                R.drawable.im2,
+                "How long does each contest in an NBA match last?",
+                "60 minutes",
+                "48 minutes",
+                "45 minutes",
+                "63 minute",
+                2
+            ),
+            Questions(
+                18,
+                R.drawable.im3,
+                "What is the length of a quarter?",
+                "12 minutes",
+                "8 minutes",
+                "10 minutes",
+                "15 minutes",
+                1
+            ),
+            Questions(
+                19,
+                R.drawable.im6,
+                "Who is the first guard to be drafter right out of school?",
+                "Allen Iverson",
+                "JA Morant",
+                "Kobe Bryant",
+                "Stephen Curry",
+                3
+            ),
+            Questions(
+                20,
+                R.drawable.im7,
+                "This team has reached five consecutive NBA finals and won three of them in the past decade , which team is it?",
+                "San Antonio Spurs",
+                "Los Angeles Lakers",
+                "Miami Heat",
+                "Golden State Warriors",
+                4
             )
         )
+        val questions = questionsList.asSequence().shuffled().take(10).toList()
+        return questions
+    }
+    fun guessFlags(): List<Flags> {
+        val questionsList: List<Flags> = listOf(
+            Flags(
+                R.drawable.ae,
+                "United Arab Emirates"
+            ),
+            Flags(
+                R.drawable.ar,
+                "Argentina"
+            ),
+            Flags(
+                R.drawable.be,
+                "Belgium"
+            ),
+            Flags(
+                R.drawable.br,
+                "Brazil"
+            ),
+            Flags(
+                R.drawable.sn,
+                "Senegal"
+            ),
+            Flags(
+                R.drawable.cl,
+                "Chile"
+            ),
+            Flags(
+                R.drawable.gh,
+                "Ghana"
+            ),
+            Flags(
+                R.drawable.iq,
+                "Iraq"
+            ),
+            Flags(
+                R.drawable.jo,
+                "Jordan"
+            ),
+            Flags(
+                R.drawable.kw,
+                "Kowait"
+            ),
+            Flags(
+                R.drawable.mr,
+                "Mauritania"
+            ),
+            Flags(
+                R.drawable.sl,
+                "Sierra Leone"
+            ),
+            Flags(
+                R.drawable.za,
+                "South Africa"
+            ),
+            Flags(
+                R.drawable.sk,
+                "Slovakia"
+            ),
+            Flags(
+                R.drawable.pa,
+                "Panama"
+            ),
+            Flags(
+                R.drawable.pr,
+                "Puerto Rico"
+            ),
+            Flags(
+                R.drawable.fr,
+                "France"
+            ),
+            Flags(
+                R.drawable.es,
+                "Spain"
+            ),
+            Flags(
+                R.drawable.de,
+                "Germany"
+            ),
+            Flags(
+                R.drawable.nl,
+                "Netherlands"
+            ),
+            Flags(
+                R.drawable.fi,
+                "Finland"
+            ),
+            Flags(
+                R.drawable.bf,
+                "Burkina Faso"
+            ),
+            Flags(
+                R.drawable.vn,
+                "Vietnam"
+            ),
+            Flags(
+                R.drawable.zm,
+                "Zambia"
+            ),
+            Flags(
+                R.drawable.mz,
+                "Mozambique"
+            ),
+            Flags(
+                R.drawable.bo,
+                "Bolivia"
+            ),
+            Flags(
+                R.drawable.al,
+                "Albania"
+            ),
+            Flags(
+                R.drawable.ua,
+                "Ukraine"
+            ),
+            Flags(
+                R.drawable.us,
+                "United States"
+            ),
+            Flags(
+                R.drawable.dk,
+                "Denmark"
+            ),
+            Flags(
+                R.drawable.co,
+                "Colombia"
+            ),
+            Flags(
+                R.drawable.fj,
+                "Fiji"
+            ),
+            Flags(
+                R.drawable.ec,
+                "Ecuador"
+            ),
+            Flags(
+                R.drawable.eng,
+                "England"
+            ),
+            Flags(
+                R.drawable.la,
+                "Laos"
+            ),
+            Flags(
+                R.drawable.lb,
+                "Lebanon"
+            ),
+            Flags(
+                R.drawable.lu,
+                "Luxembourg"
+            ),
+            Flags(
+                R.drawable.ly,
+                "Libya"
+            ),
+            Flags(
+                R.drawable.pe,
+                "Peru"
+            ),
+            Flags(
+                R.drawable.et,
+                "Ethiopia"
+            ),
+            Flags(
+                R.drawable.ee,
+                "Estonia"
+            ),
+            Flags(
+                R.drawable.hr,
+                "Croatia"
+            )
 
-        questionsList.asSequence().shuffled().take(5).toList()
-        return questionsList
+        )
+        return questionsList.asSequence().shuffled().take(20).toList()
     }
 }

@@ -10,16 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizAPP">
         <activity
-            android:name=".NbaActivity"
+            android:name=".Auth.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Questions.NbaActivity"
             android:exported="false" />
         <activity
             android:name=".ResultActivity"
             android:exported="false" />
         <activity
-            android:name=".QuestionsActivity"
+            android:name=".ResultActivityNba"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Questions.QuestionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".flags.QuestionsActivityFlags"
+            android:exported="false" />
+        <activity
+            android:name=".Auth.NbaAuth"
+            android:exported="false"/>
+        <activity
+            android:name=".Auth.CategoriesActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

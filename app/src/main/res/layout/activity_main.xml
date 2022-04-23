@@ -7,7 +7,7 @@
     android:background="@drawable/background"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".Auth.MainActivity">
 
     <TextView
         android:id="@+id/tv_app_name"
@@ -88,17 +88,18 @@
     </Button>
 
     <Button
-        android:id="@+id/btn_nba"
+        android:id="@+id/btn_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_margin="16dp"
         android:background="@color/design_default_color_primary"
         android:fontFamily="@font/san_francisco"
-        android:text="NBA QUIZ"
+        android:text="Home"
         android:textColor="@android:color/white"
         android:textSize="18sp">
     </Button>
+
 
 
 </LinearLayout>

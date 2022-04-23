@@ -7,10 +7,15 @@
         <entry key="..\:/Users/imwiz/AndroidStudioProjects/QuizAPP/app/src/main/res/drawable/default_option_border_bg.xml" value="0.1885" />
         <entry key="..\:/Users/imwiz/AndroidStudioProjects/QuizAPP/app/src/main/res/drawable/selected_option_border_bg.xml" value="0.1885" />
         <entry key="..\:/Users/imwiz/AndroidStudioProjects/QuizAPP/app/src/main/res/drawable/wrong_option_bg.xml" value="0.1885" />
+        <entry key="..\:/Users/imwiz/AndroidStudioProjects/QuizAPP/app/src/main/res/layout/activity_categories.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/imwiz/AndroidStudioProjects/QuizAPP/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/imwiz/AndroidStudioProjects/QuizAPP/app/src/main/res/layout/activity_mainn.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/imwiz/AndroidStudioProjects/QuizAPP/app/src/main/res/layout/activity_nba.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/imwiz/AndroidStudioProjects/QuizAPP/app/src/main/res/layout/activity_questions.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/imwiz/AndroidStudioProjects/QuizAPP/app/src/main/res/layout/activity_questionsFlags.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/imwiz/AndroidStudioProjects/QuizAPP/app/src/main/res/layout/activity_questionsflags.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/imwiz/AndroidStudioProjects/QuizAPP/app/src/main/res/layout/activity_result.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/imwiz/AndroidStudioProjects/QuizAPP/app/src/main/res/layout/categorieslayout.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/imwiz/AndroidStudioProjects/QuizAPP/app/src/main/res/layout/main_activity.xml" value="0.2" />
         <entry key="..\:/Users/imwiz/AndroidStudioProjects/QuizAPP/app/src/main/res/layout/resultslist.xml" value="0.20416666666666666" />
       </map>

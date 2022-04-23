@@ -6,14 +6,12 @@ import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.quizapp.Model.LbAdapter
+import com.example.quizapp.Auth.MainActivity
+import com.example.quizapp.recyclerView.LbAdapter
 import com.example.quizapp.Model.QuestionsSource
 import com.example.quizapp.Model.Users
-import com.example.quizapp.databinding.ActivityMainBinding
-import com.example.quizapp.databinding.ActivityQuestionsBinding
 import com.example.quizapp.databinding.ActivityResultBinding
 import com.google.firebase.firestore.*
-import com.google.firebase.ktx.Firebase
 
 class ResultActivity : AppCompatActivity() {
     private lateinit var _binding : ActivityResultBinding
@@ -41,7 +39,7 @@ class ResultActivity : AppCompatActivity() {
                 "score" to answers))
         }
         binding.finish.setOnClickListener {
-            val Intent = Intent(this,MainActivity::class.java)
+            val Intent = Intent(this, MainActivity::class.java)
             startActivity(Intent)
         }
     }
